@@ -1,0 +1,52 @@
+@import '~normalize.css';
+
+* {
+    box-sizing: border-box;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+html {
+    height: 100%;
+    background: var(--main-bg-color-light);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 80px;
+    width: 145px;
+    margin: 0 auto;
+    background: var(--main-bg-color-dark);
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu__item {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 115px;
+    border-radius: 15px;
+    background: var(--main-bg-color-light);
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: var(--main-bg-color-dark);
+    padding: 15px 0;
+    transition: background 0.3s;
+}
+
+.menu__item:hover {
+    background: var(--secondary-bg-color-light);
+    cursor: pointer;
+}

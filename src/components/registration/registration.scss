@@ -1,0 +1,15 @@
+.registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 350px;
+    margin: 0 auto;
+    background: var(--main-bg-color-dark);
+    border-radius: 30px;
+}
+
+.registration input {
+    margin: 15px auto;
+}

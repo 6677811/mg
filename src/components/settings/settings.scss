@@ -1,0 +1,106 @@
+.settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    min-height: 640px;
+    width: 640px;
+    padding: 0 30px;
+    background: var(--main-bg-color-dark);
+    border-radius: 30px;
+}
+
+.settings__header {
+    color: var(--main-bg-color-light);
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.settings-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    background: var(--main-bg-color-light);
+    color: var(--main-bg-color-dark);
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.difficulty__header {
+    font-size: 1.3em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.difficulty__options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.difficulty__options-item {
+    color: var(--main-bg-color-dark);
+    transition: color 0.3s;
+    padding-bottom: 5px;
+    width: 150px;
+    height: 40px;
+}
+
+.difficulty__options-item:hover {
+    font-weight: bold;
+}
+
+.difficulty__options-item--checked {
+    font-weight: bold;
+}
+
+.difficulty__option-label {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.card-categories__header {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card-categories__options {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.card-categories__options-item {
+    width: 110px;
+    height: 110px;
+    margin: 0 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.card-categories__options-item:hover {
+    transform: scale(1.1);
+}
+
+.card-categories__options-image {
+    width: 110px;
+    height: 110px;
+}
+
+.card-categories__options-item--checked {
+    transform: scale(1.1);
+}
+
+.card-categories__options-item--checked img {
+    border-color: var(--secondary-bg-color-dark);
+    border: 7px solid;
+}

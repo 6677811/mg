@@ -1,0 +1,74 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": ["airbnb-base"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2021,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "modules": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "rules": {
+        "class-methods-use-this": "off",
+        "no-trailing-spaces": 0,
+        "no-param-reassign": 0,
+        "linebreak-style": 0,
+        "indent": ["error", 4],
+        "no-bitwise": 0,
+        "no-console": 0,
+        "no-unused-vars": 0,
+        "no-useless-escape": 0,
+        "padding-line-between-statements": [
+            "error",
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": [
+                    "block",
+                    "block-like",
+                    "cjs-export",
+                    "class",
+                    "const",
+                    "export",
+                    "import",
+                    "let",
+                    "var"
+                ]
+            },
+            {
+                "blankLine": "always",
+                "prev": [
+                    "block",
+                    "block-like",
+                    "class",
+                    "const",
+                    "export",
+                    "import",
+                    "let",
+                    "var"
+                ],
+                "next": "*"
+            },
+            {
+                "blankLine": "any",
+                "prev": ["const", "let", "var", "export"],
+                "next": ["const", "let", "var", "export"]
+            },
+            {
+                "blankLine": "any",
+                "prev": ["export", "import"],
+                "next": ["export", "import"]
+            },
+            {
+                "blankLine": "never",
+                "prev": ["case"],
+                "next": ["case", "default"]
+            }
+        ]
+    }
+}
